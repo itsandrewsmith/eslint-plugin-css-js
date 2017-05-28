@@ -8,7 +8,7 @@
 // Requirements
 //------------------------------------------------------------------------------
 
-var rule = require("../../../lib/rules/valid-css-in-js"),
+var rule = require("../../../lib/rules/valid-css"),
 
     RuleTester = require("eslint").RuleTester;
 
@@ -18,7 +18,7 @@ var rule = require("../../../lib/rules/valid-css-in-js"),
 //------------------------------------------------------------------------------
 
 var ruleTester = new RuleTester();
-ruleTester.run("valid-cs-in-js", rule, {
+ruleTester.run("valid-css", rule, {
 
     valid: [
         "var css = { display: 'block' }",

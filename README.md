@@ -36,7 +36,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "css-js/rule-name": 2
+        "css-js/valid-css": 2
     }
 }
 ```
