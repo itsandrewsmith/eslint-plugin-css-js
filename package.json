@@ -1,0 +1,29 @@
+{
+  "name": "eslint-plugin-css-in-js",
+  "version": "0.0.0",
+  "description": "linting for css in js",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "andrww smith",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "dependencies": {
+    "css-values": "^0.1.0",
+    "dashify": "^0.2.2",
+    "requireindex": "~1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "jest": "^20.0.4",
+    "mocha": "^3.1.2"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "ISC"
+}
