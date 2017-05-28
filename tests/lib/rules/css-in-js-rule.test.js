@@ -40,6 +40,13 @@ ruleTester.run("css-in-js-rule", rule, {
                 message: "\"nope\" is not a valid value for \"font-size\".",
                 type: "Property"
             }]
+        }, 
+        {
+            code: "var css = { fontSize: 10 }",
+            errors: [{
+                message: "\"10\" is not a valid value for \"font-size\".",
+                type: "Property"
+            }]
         }
     ]
 });
