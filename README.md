@@ -1,4 +1,4 @@
-# eslint-plugin-css-in-js
+# eslint-plugin-css-js
 
 linting for css in js
 
@@ -10,22 +10,22 @@ You'll first need to install [ESLint](http://eslint.org):
 $ npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-css-in-js`:
+Next, install `eslint-plugin-css-js`:
 
 ```
-$ npm install eslint-plugin-css-in-js --save-dev
+$ npm install eslint-plugin-css-js --save-dev
 ```
 
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-css-in-js` globally.
+**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-css--js` globally.
 
 ## Usage
 
-Add `css-in-js` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `css-js` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
     "plugins": [
-        "css-in-js"
+        "css-js"
     ]
 }
 ```
@@ -36,7 +36,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "css-in-js/rule-name": 2
+        "css-js/rule-name": 2
     }
 }
 ```
