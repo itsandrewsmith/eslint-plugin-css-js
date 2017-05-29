@@ -1,12 +1,16 @@
 {
   "name": "eslint-plugin-css-js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "linting for css in js",
   "keywords": [
     "eslint",
     "eslintplugin",
     "eslint-plugin"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itsandrewsmith/eslint-plugin-css-js.git"
+  },
   "author": "andrww smith",
   "main": "lib/index.js",
   "scripts": {
