@@ -15,6 +15,7 @@
   "dependencies": {
     "css-values": "^0.1.0",
     "dashify": "^0.2.2",
+    "postcss-value-parser": "^3.3.0",
     "requireindex": "~1.1.0"
   },
   "devDependencies": {
