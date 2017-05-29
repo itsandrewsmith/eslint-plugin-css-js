@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-css-js",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "linting for css in js",
   "keywords": [
     "eslint",
@@ -23,6 +23,9 @@
     "requireindex": "~1.1.0"
   },
   "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-es2016": "^6.24.1",
     "eslint": "^3.19.0",
     "jest": "^20.0.4",
     "mocha": "^3.1.2"
