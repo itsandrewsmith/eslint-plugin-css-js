@@ -17,10 +17,26 @@ var rule = require('../../../lib/rules/valid-css'),
 
 var ruleTester = new RuleTester()
 ruleTester.run('valid-css', rule, {
-    valid: [
-        "var div = glamorous.div({ display: 'block' })",
+    valid: [{
+            options: [{ declaratorNames: ['style', 'styles'] }],
+            code: "var div = glamorous.div({ display: 'block' })",
+        },
         "var div = glamorous.div({ fontSize: '10px' })",
         "var div = glamorous.div({ color: 'aquamarine' })",
+        {
+            options: [{ declaratorNames: ['styles'] }],
+            code: "var styles = { fontSize: '10px' }"
+        },
+        {
+            options: [{ declaratorNames: ['yessir'] }],
+            code: "var yessir = { color: 'purple' }"
+        },
+
+        {
+            code: "var notInList = { color: 'purple' }",
+            options: [{ declaratorNames: ['style', 'styles'] }, ],
+        },
+
     ],
 
     invalid: [{
@@ -53,5 +69,16 @@ ruleTester.run('valid-css', rule, {
                 type: 'Property',
             }, ],
         },
+
+        {
+
+            code: "var styles = { fontSize: 'onemillion' }",
+            errors: [{
+                message: '"onemillion" is not a valid value for "font-size".',
+                type: 'Property',
+            }, ],
+            options: [{ declaratorNames: ['style', 'styles'] }, ],
+        },
+
     ],
 })
