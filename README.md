@@ -50,6 +50,7 @@ function myMiddleware({ key, value }){
         }               
     }   
 
+    // this is a fallthrough for when your rule didn't apply
     return { key, value }
 }
 
