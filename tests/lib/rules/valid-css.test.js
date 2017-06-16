@@ -77,7 +77,7 @@ ruleTester.run('valid-css', rule, {
                 message: '"onemillion" is not a valid value for "font-size".',
                 type: 'Property',
             }, ],
-            options: [{ declaratorNames: ['style', 'styles'] }, ],
+            options: [{ declaratorNames: ['styles'] }],
         },
 
     ],

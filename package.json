@@ -1,37 +1,37 @@
 {
-  "name": "eslint-plugin-css-js",
-  "version": "0.1.3",
-  "description": "linting for css in js",
-  "keywords": [
-    "eslint",
-    "eslintplugin",
-    "eslint-plugin"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/itsandrewsmith/eslint-plugin-css-js.git"
-  },
-  "author": "andrww smith",
-  "main": "lib/index.js",
-  "scripts": {
-    "test": "jest --watch"
-  },
-  "dependencies": {
-    "css-values": "^0.1.0",
-    "dashify": "^0.2.2",
-    "postcss-value-parser": "^3.3.0",
-    "requireindex": "~1.1.0"
-  },
-  "devDependencies": {
-    "babel-core": "^6.24.1",
-    "babel-preset-env": "^1.5.1",
-    "babel-preset-es2016": "^6.24.1",
-    "eslint": "^3.19.0",
-    "jest": "^20.0.4",
-    "mocha": "^3.1.2"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "license": "ISC"
+    "name": "eslint-plugin-css-js",
+    "version": "0.2.0",
+    "description": "linting for css in js",
+    "keywords": [
+        "eslint",
+        "eslintplugin",
+        "eslint-plugin"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/itsandrewsmith/eslint-plugin-css-js.git"
+    },
+    "author": "andrww smith",
+    "main": "lib/index.js",
+    "scripts": {
+        "test": "jest --watch"
+    },
+    "dependencies": {
+        "css-values": "^0.1.0",
+        "dashify": "^0.2.2",
+        "postcss-value-parser": "^3.3.0",
+        "requireindex": "~1.1.0"
+    },
+    "devDependencies": {
+        "babel-core": "^6.24.1",
+        "babel-preset-env": "^1.5.1",
+        "babel-preset-es2016": "^6.24.1",
+        "eslint": "^3.19.0",
+        "jest": "^20.0.4",
+        "mocha": "^3.1.2"
+    },
+    "engines": {
+        "node": ">=0.10.0"
+    },
+    "license": "ISC"
 }
