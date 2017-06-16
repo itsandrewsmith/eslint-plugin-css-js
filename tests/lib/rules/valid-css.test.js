@@ -79,6 +79,5 @@ ruleTester.run('valid-css', rule, {
             }, ],
             options: [{ declaratorNames: ['styles'] }],
         },
-
     ],
 })
