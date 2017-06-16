@@ -39,12 +39,12 @@ function myMiddleware({ key, value }){
     const validated = myValidationLogic({ key, value }) // => { isValid: ??? }
 
     // this will exit early and override any middleware after it
-    if (validated.isValid){
+    if (validated.isValid === true ){
         return { isValid: true }
     }
 
     // this will display any custom message by the linter 
-    if (!validated.isValid === false){
+    if (validated.isValid === false){
         return {
             message: 'your custom error message to override'
         }               
